@@ -89,7 +89,11 @@ class App extends Component {
           />
         }
       >
-        <TodoItemList todos={todos} onToggle={handleToggle} />
+        <TodoItemList
+          todos={todos}
+          onToggle={handleToggle}
+          onRemove={handleRemove}
+        />
       </TodoListTemplate>
     );
   }
